@@ -1,0 +1,61 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 368 160)
+	(text "DataReg" (rect 5 0 48 12)(font "Arial" ))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "rst_n" (rect 16 24 45 38)(font "Arial" (font_size 8)))
+		(text "rst_n" (rect 16 24 45 38)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 8 32))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clk" (rect 40 56 55 70)(font "Arial" (font_size 8)))
+		(text "clk" (rect 40 56 55 70)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 32 64))
+	)
+	(port
+		(pt 152 96)
+		(input)
+		(text "D[3..0]" (rect 144 45 158 81)(font "Arial" (font_size 8))(vertical))
+		(text "D[3..0]" (rect 144 45 158 81)(font "Arial" (font_size 8))(vertical))
+		(line (pt 152 96)(pt 152 80))
+	)
+	(port
+		(pt 152 0)
+		(output)
+		(text "Q[3..0]" (rect 144 32 158 69)(font "Arial" (font_size 8))(vertical))
+		(text "Q[3..0]" (rect 144 32 158 69)(font "Arial" (font_size 8))(vertical))
+		(line (pt 152 0)(pt 152 24))
+	)
+	(drawing
+		(text "Data Registor" (rect 112 40 188 54)(font "Arial" (font_size 8)))
+		(line (pt 32 56)(pt 40 64))
+		(line (pt 32 72)(pt 40 64))
+		(rectangle (rect 32 16 288 80))
+		(circle (rect 8 24 32 48))
+	)
+)

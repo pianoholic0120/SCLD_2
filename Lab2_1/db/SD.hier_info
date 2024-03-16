@@ -1,0 +1,110 @@
+|SD
+A_p <= DFF_1:inst2.Q
+clk => DFF_1:inst2.CLK
+clk => DFF_1:inst4.CLK
+clk => DFF_1:inst3.CLK
+X => and_2:inst8.i1
+X => not_1:inst.i1
+X => and_3:inst14.i1
+X => and_3:inst5.i1
+C_p <= DFF_1:inst4.Q
+A_n <= DFF_1:inst2.QN
+B_n <= DFF_1:inst3.QN
+C_n <= DFF_1:inst4.QN
+B_p <= DFF_1:inst3.Q
+rst_n => DFF_1:inst3.ClrN
+rst_n => DFF_1:inst4.ClrN
+rst_n => DFF_1:inst2.ClrN
+Z <= and_2:inst22.o1
+
+
+|SD|DFF_1:inst2
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SD|or_2:inst23
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i1 => inst.IN1
+
+
+|SD|and_2:inst8
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|SD|DFF_1:inst4
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SD|or_2:inst25
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i1 => inst.IN1
+
+
+|SD|not_1:inst
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+
+
+|SD|and_3:inst26
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst.IN2
+
+
+|SD|DFF_1:inst3
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SD|or_3:inst24
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i2 => inst.IN0
+i3 => inst.IN1
+i1 => inst.IN2
+
+
+|SD|and_2:inst13
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+
+|SD|and_3:inst14
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst.IN2
+
+
+|SD|and_3:inst5
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+i3 => inst.IN2
+
+
+|SD|and_2:inst22
+o1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+i1 => inst.IN0
+i2 => inst.IN1
+
+

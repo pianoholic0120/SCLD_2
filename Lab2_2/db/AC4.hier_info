@@ -1,0 +1,231 @@
+|AC4
+overflow <= fulladder4:inst.S[4]
+x_i[0] => fulladder4:inst.A[0]
+x_i[0] => mux4:inst1.in1[0]
+x_i[1] => fulladder4:inst.A[1]
+x_i[1] => mux4:inst1.in1[1]
+x_i[2] => fulladder4:inst.A[2]
+x_i[2] => mux4:inst1.in1[2]
+x_i[3] => fulladder4:inst.A[3]
+x_i[3] => mux4:inst1.in1[3]
+rst_n => DataReg:inst3.rst_n
+rst_n => controller:inst4.rst_n
+clk => DataReg:inst3.clk
+clk => controller:inst4.clk
+load => mux4:inst1.load
+load => controller:inst4.load
+done <= controller:inst4.done
+sum_o[0] <= DataReg:inst3.Q[0]
+sum_o[1] <= DataReg:inst3.Q[1]
+sum_o[2] <= DataReg:inst3.Q[2]
+sum_o[3] <= DataReg:inst3.Q[3]
+
+
+|AC4|fulladder4:inst
+S[0] <= fulladder1:inst8.S
+S[1] <= fulladder1:inst7.S
+S[2] <= fulladder1:inst6.S
+S[3] <= fulladder1:inst.S
+S[4] <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => fulladder1:inst8.x
+A[1] => fulladder1:inst7.x
+A[2] => fulladder1:inst6.x
+A[3] => fulladder1:inst.x
+B[0] => fulladder1:inst8.y
+B[1] => fulladder1:inst7.y
+B[2] => fulladder1:inst6.y
+B[3] => fulladder1:inst.y
+
+
+|AC4|fulladder4:inst|fulladder1:inst
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|fulladder4:inst|fulladder1:inst6
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|fulladder4:inst|fulladder1:inst7
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|fulladder4:inst|fulladder1:inst8
+S <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x => inst.IN0
+x => inst2.IN0
+y => inst.IN1
+y => inst2.IN1
+Ci => inst1.IN1
+Ci => inst3.IN1
+Co <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|fulladder4:inst|gnd_1:inst20
+o1 <= <GND>
+
+
+|AC4|DataReg:inst3
+Q[0] <= DFF_1:inst24.Q
+Q[1] <= DFF_1:inst23.Q
+Q[2] <= DFF_1:inst22.Q
+Q[3] <= DFF_1:inst21.Q
+clk => DFF_1:inst24.CLK
+clk => DFF_1:inst23.CLK
+clk => DFF_1:inst22.CLK
+clk => DFF_1:inst21.CLK
+D[0] => DFF_1:inst24.D
+D[1] => DFF_1:inst23.D
+D[2] => DFF_1:inst22.D
+D[3] => DFF_1:inst21.D
+rst_n => DFF_1:inst24.ClrN
+rst_n => DFF_1:inst23.ClrN
+rst_n => DFF_1:inst22.ClrN
+rst_n => DFF_1:inst21.ClrN
+
+
+|AC4|DataReg:inst3|DFF_1:inst24
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|DataReg:inst3|DFF_1:inst23
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|DataReg:inst3|DFF_1:inst22
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|DataReg:inst3|DFF_1:inst21
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|mux4:inst1
+out[0] <= mux_2:inst28.o1
+out[1] <= mux_2:inst27.o1
+out[2] <= mux_2:inst26.o1
+out[3] <= mux_2:inst25.o1
+load => mux_2:inst28.sel
+load => mux_2:inst27.sel
+load => mux_2:inst26.sel
+load => mux_2:inst25.sel
+in0[0] => mux_2:inst28.i0
+in0[1] => mux_2:inst27.i0
+in0[2] => mux_2:inst26.i0
+in0[3] => mux_2:inst25.i0
+in1[0] => mux_2:inst28.i1
+in1[1] => mux_2:inst27.i1
+in1[2] => mux_2:inst26.i1
+in1[3] => mux_2:inst25.i1
+
+
+|AC4|mux4:inst1|mux_2:inst28
+o1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst4.IN0
+i1 => inst2.IN1
+i0 => inst.IN0
+
+
+|AC4|mux4:inst1|mux_2:inst27
+o1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst4.IN0
+i1 => inst2.IN1
+i0 => inst.IN0
+
+
+|AC4|mux4:inst1|mux_2:inst26
+o1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst4.IN0
+i1 => inst2.IN1
+i0 => inst.IN0
+
+
+|AC4|mux4:inst1|mux_2:inst25
+o1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+sel => inst2.IN0
+sel => inst4.IN0
+i1 => inst2.IN1
+i0 => inst.IN0
+
+
+|AC4|controller:inst4
+done <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+clk => DFF_1:inst30.CLK
+clk => DFF_1:inst29.CLK
+clk => DFF_1:inst31.CLK
+load => inst13.IN0
+rst_n => DFF_1:inst29.ClrN
+rst_n => DFF_1:inst31.ClrN
+rst_n => DFF_1:inst30.ClrN
+
+
+|AC4|controller:inst4|DFF_1:inst30
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|controller:inst4|DFF_1:inst29
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|AC4|controller:inst4|DFF_1:inst31
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+ClrN => inst.ACLR
+CLK => inst.CLK
+D => inst.DATAIN
+PreN => inst.PRESET
+QN <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

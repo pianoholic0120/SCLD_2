@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\Lab2\Lab2_3\simulation\qsim
+vFSM
+II1j6YeWYM>U0nd]?ARz4f3
+V?>]VFZLkUMU0Jz=C;8lz91
+Z1 dC:\altera\13.1\Lab2\Lab2_3\simulation\qsim
+w1701574912
+Z2 8WSC.vo
+Z3 FWSC.vo
+L0 31
+Z4 OV;L;10.1d;51
+r1
+31
+Z5 !s90 -work|work|WSC.vo|
+Z6 o-work work -O0
+n@f@s@m
+Z7 !s107 WSC.vo|
+!i10b 1
+!s100 Z>^0RBa1RXl1Fm1b]U6]a3
+!s85 0
+!s108 1701574912.545000
+!s101 -O0
+vFSM_vlg_check_tst
+I?n3Sob4=L3C60PJ>;g[]i2
+VHXJ_AW_eQ8inndgkzG_D00
+R1
+Z8 w1701574910
+Z9 8Lab2_3.vwf.vt
+Z10 FLab2_3.vwf.vt
+L0 61
+R4
+r1
+31
+Z11 !s108 1701574912.639000
+Z12 !s107 Lab2_3.vwf.vt|
+Z13 !s90 -work|work|Lab2_3.vwf.vt|
+R6
+n@f@s@m_vlg_check_tst
+!i10b 1
+!s100 KQbY_gi`Uj4ciVBj?BgQA1
+!s85 0
+!s101 -O0
+vFSM_vlg_sample_tst
+IGbL=Y6:n=?d>;o_80PRdM3
+V^HS=731FgCWeH[9A[CYKn3
+R1
+R8
+R9
+R10
+L0 29
+R4
+r1
+31
+R11
+R12
+R13
+R6
+n@f@s@m_vlg_sample_tst
+!i10b 1
+!s100 EQgW;5o6haoa@VDWNM3Ed1
+!s85 0
+!s101 -O0
+vFSM_vlg_vec_tst
+Izh0[:Td2=9Q9hREmS9<;E2
+VQXU`if7O5mNhI[hi^JE;M3
+R1
+R8
+R9
+R10
+L0 156
+R4
+r1
+31
+R11
+R12
+R13
+R6
+n@f@s@m_vlg_vec_tst
+!i10b 1
+!s100 i^^AFZKX:F60gd[RFAIL21
+!s85 0
+!s101 -O0
+vWSC
+Ih@WM=TLdU4MR7m=hHC>2`2
+Z14 Vg^8foldC[3?U;iXA]YYCh0
+R1
+w1701576867
+R2
+R3
+L0 31
+R4
+r1
+31
+R5
+R6
+Z15 n@w@s@c
+!i10b 1
+!s100 T_ZUzFXa3FZ9PS1aM0L9S0
+!s85 0
+!s108 1701576867.831000
+R7
+!s101 -O0
+vWSC_vlg_check_tst
+!i10b 1
+Z16 !s100 VgI@g637`;EEADH<L0Fea0
+Z17 IjCf7YBo3IJi7>22KBIY:L1
+Z18 V4Uj:a8Wa8IF1JU4<=OcbJ3
+R1
+Z19 w1701576866
+R9
+R10
+L0 63
+R4
+r1
+!s85 0
+31
+Z20 !s108 1701576867.893000
+Z21 !s107 Lab2_3.vwf.vt|
+R13
+!s101 -O0
+R6
+Z22 n@w@s@c_vlg_check_tst
+vWSC_vlg_sample_tst
+!i10b 1
+Z23 !s100 ;j:f`3=KG1_Qg7>@;12eM2
+Z24 InnQ;5;_8_?fz7:G2=WaIC0
+Z25 VTMK7gn?Z]5=<QYdNgSAgF0
+R1
+R19
+R9
+R10
+L0 29
+R4
+r1
+!s85 0
+31
+R20
+R21
+R13
+!s101 -O0
+R6
+Z26 n@w@s@c_vlg_sample_tst
+vWSC_vlg_vec_tst
+!i10b 1
+Z27 !s100 ]Mco_c8m;;5HdhQ19S6SV3
+Z28 ITX72P2fYR]Kbj@HiH5N]72
+Z29 VjdJ<3fKBEB>nPcck=RO>e3
+R1
+R19
+R9
+R10
+Z30 L0 243
+R4
+r1
+!s85 0
+31
+R20
+R21
+R13
+!s101 -O0
+R6
+Z31 n@w@s@c_vlg_vec_tst
